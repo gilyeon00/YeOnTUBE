@@ -5,6 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{margin:0; padding: 0; box-sizing: border-box;}
+        ul,li{list-style: none;}    /* ul, li태그를 했을 때 나오는 기호나 숫자를 없애줌 */
+        a{text-decoration: none; color:inherit}     /* a태그는 하이퍼링크로, 밑줄,색상이런거 안바꾸고 기존꺼 그대로 사용 */
+        .container{width: 1200px; margin: auto;}
+        .search-field{display: flex; justify-content: center;}  /* 부모에 display, justify-content 설정해주면 자식들 수평가운데 정렬됨 */
+        .search-box{display: flex; padding: 16px 0;}
+        #searchInput{width: 600px; height: 30px; padding: 0 8px;}
+        #searchBtn{width: 100px; height: 30px; background-color: black; color: #fff;}     /* input이랑 btn이랑 같은 높이로 설정해도 실제론 같지 않다는 점 유의 -> box-sizing: border-box; 을 이용해야 테두리까지 쳐줌*/
+        
+        .video-field{width: 100%; flex-wrap: wrap;}
+        .video-item{width: calc(20% - 10px); border: black 1px solid; margin: 4px; padding: 12px;}
+        .video-item .thumnail-img{width: 100%;}
+        .video-txt h2{font-size: 14px;}
+        .video-txt h3{font-size: 12px;}
+        .video-txt h4{font-size: 10px;}
+    </style>
+    </style>
 </head>
 <body>
     <div class = "container">
